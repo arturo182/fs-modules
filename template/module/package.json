@@ -11,7 +11,7 @@
     "release": "webpack --mode=production --env=release"
   },
   "dependencies": {
-    "@noodl/noodl-sdk": "^0.5.4"
+    "@noodl/noodl-sdk": "git+https://github.com/arturo182/noodl-sdk.git"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
