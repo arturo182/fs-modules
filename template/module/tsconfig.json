@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outDir": "../project/noodl_modules",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+  }
+}
