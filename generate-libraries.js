@@ -5,7 +5,7 @@ const { URL } = require('url');
 
 const baseUrl = process.argv[process.argv.length - 1];
 if (!baseUrl.startsWith('http')) {
-  console.log('Usage: node generate-library.js <baseUrl>');
+  console.log('Usage: node generate-libraries.js <baseUrl>');
   process.exit(1);
 }
 
@@ -38,7 +38,7 @@ modules.forEach((module) => {
   const destPath = path.join(modulesPath, module);
 
   console.log(`Processing ${module}`);
-  childProcess.execSync('npm run build', { cwd: modulePath, stdio: 'inherit' });
+  childProcess.execSync('npm run release', { cwd: modulePath, stdio: 'inherit' });
 
   fs.mkdirSync(destPath, { recursive: true });
 
