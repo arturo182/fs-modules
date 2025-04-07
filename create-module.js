@@ -56,6 +56,7 @@ async function main() {
     'README.md',
     'module.json',
     'module/package.json',
+    'module/src/index.ts',
     'module/src/constants.ts',
     'project/project.json',
   ];
