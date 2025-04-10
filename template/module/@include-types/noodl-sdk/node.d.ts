@@ -7,6 +7,7 @@ declare module '@noodl/noodl-sdk' {
 
         displayName?: string
         useInputAsLabel?: string
+        nodeDoubleClickAction?: { focusPort: string }
 
         /**
          * Sets the color.
